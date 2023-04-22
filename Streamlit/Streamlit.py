@@ -8,7 +8,7 @@ from h2o.automl import H2OAutoML
 # inicializar H2O
 h2o.init()
 
-st.set_page_config(layout="wide", initial_sidebar_state="collapsed", page_title='comparison', page_icon=":cloud:")
+st.set_page_config(layout="wide", initial_sidebar_state="collapsed", page_title='Weather VS Revenue. Un Modelo Predictivo', page_icon=":cloud:")
 
 
 st.title("Weather VS Revenue. Un Modelo Predictivo")
