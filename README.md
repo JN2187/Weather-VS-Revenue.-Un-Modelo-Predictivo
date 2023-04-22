@@ -1,8 +1,8 @@
 # Proyecto de análisis de datos: ¿Está la audiencia de mi medio relacionada con la inestabilidad climática?
 
-En este proyecto de análisis de datos, se ha llevado a cabo una investigación para demostrar la hipótesis de que la audiencia de un medio de comunicación está vinculada a la inestabilidad climática, en concreto a las precipitaciones. La hipótesis se basa en la intuición de que cuando llueve, la gente tiende a pasar más tiempo en interiores y, por lo tanto, aumenta la audiencia de los medios de comunicación.
+En este proyecto de análisis de datos, se ha llevado a cabo una investigación para demostrar la hipótesis de que la audiencia de un medio de comunicación está vinculada a la inestabilidad climática, en concreto a las precipitaciones, es decir la lluvia.
 
-Para llevar a cabo esta investigación, se han utilizado tres fuentes de datos diferentes. En primer lugar, se ha utilizado la API de Google Analytics para obtener datos sobre la audiencia del medio de comunicación a lo largo de todo el año 2022. Se ha generado un dataframe con la audiencia media diaria y mensualizada del site, con el objetivo de analizar si se producen picos de audiencia cuando llueve.
+En este proyecto de análisis de datos, he llevado a cabo una investigación para demostrar la hipótesis de que la audiencia de un site weather, está vinculada a la inestabilidad climática, en concreto a las precipitaciones. Para llevar a cabo esta investigación, se han utilizado tres fuentes de datos diferentes. En primer lugar, se ha utilizado la API de Google Analytics para obtener datos sobre la audiencia del site a lo largo de todo el año 2022. Datos climatológicos de nuestra base de datos histórica. Se ha generado un dataframe con la audiencia media diaria y mensualizada del site, con el objetivo de analizar si se producen picos de audiencia cuando llueve. Y datos de nuestra plataforma de compra Progrmática (Es un sistema automático que gestiona los anuncios en internet, y funciona con un sistema de puja sin intermediarios, es como la bolsa de valores pero de espacios publiciatios y en tiempo real). Se han cruzado y analizado datos de las precipitaciones en la península, la audiencia en el site, y los clientes que más han invertido, analizando los formatos que mejor funcionan en sus campañas, entre otros parámetros. Y a través de un modelo de Machine Learning y con todas éstas variables, se ha generado un modelo que tiene la capacidad de estimar el Revenue que podría generar un cliente bajo unas condiciones específicas
 
 En segundo lugar, se han utilizado datos de precipitaciones medias tanto diarias como mensuales de cada una de las estaciones meteorológicas de España en el año 2022, excluyendo a Canarias para no desvirtuar el dato de lluvia de la península. Se ha definido qué es lluvia a partir de los datos de las precipitaciones, teniendo en cuenta que los datos vienen en mm3, y considerando lluvia a partir de 2,5mm3 de media en España.
 
@@ -32,7 +32,7 @@ En la carpeta del repositorio denominada data se encuentran almacenados todos lo
 
 - **H20.ipynb**: Notebook que utiliza el marco de trabajo H2O para generar un modelo de aprendizaje automático que pueda predecir el revenue en función de los datos de audiencia y precipitaciones.
 
-- **Streamlit**: Todo el código necesario para cargar toda la información en un .py, llamado Streamlit.py,
+- **Streamlit**: Todo el código necesario para cargar toda la información en un .py, llamado Streamlit.py, para la visualización del proyecto como un prototipo de app interactiva.
 
 ## Librerías
 
@@ -66,6 +66,16 @@ En la carpeta del repositorio denominada data se encuentran almacenados todos lo
 - h2o
 - H2OAutoML
 
+### Streamlit.ipynb
+
+- streamlit
+- pandas
+- datetime
+- relativedelta
+- src.support
+- h2o
+- H2OAutoML
+
 ## Next Steps
 
-La idea de éste proyecto es poder implementar los resultados obtenido para tener un uso real y mejorar el revenue de la parte de la venta programática de mi compañía.
+La idea de éste proyecto es poder implementar los resultados obtenidos para tener un uso real y mejorar el revenue de la parte de la venta programática de mi compañía.

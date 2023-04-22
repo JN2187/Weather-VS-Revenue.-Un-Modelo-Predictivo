@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import datetime
-import io
 from dateutil.relativedelta import relativedelta
 import src.support as sp
 import h2o
@@ -14,7 +13,7 @@ st.set_page_config(layout="wide", initial_sidebar_state="collapsed", page_title=
 
 st.title("Weather VS Revenue. Un Modelo Predictivo")
 
-st.markdown('En este proyecto de análisis de datos, he llevado a cabo una investigación para demostrar la hipótesis de que la audiencia de un site weather, está vinculada a la inestabilidad climática, en concreto a las precipitaciones. Se han cruzado y analizado datos del 2022 de las precipitaciones en la península, la audiencia en el site, y los clientes que más han invertido en campañas Programáticas (Compra de campañas de publicidad en Marketplaces, donde se llevan a cabo subastas digitales de los espacios publicitarios), analizando los formatos que mejor funcionan en sus campañas. Y a través de un modelo de Machine Learning y juntando todas éstas variables, se ha generado un modelo que tiene la capacidad de estimar el Revenue que podría generar un cliente bajo unas condiciones específicas, pudiendo optimizar los costes de las campañas para generar aún más revenue')
+st.markdown('En este proyecto de análisis de datos, he llevado a cabo una investigación para demostrar la hipótesis de que la audiencia de un site weather, está vinculada a la inestabilidad climática, en concreto a las precipitaciones. Para llevar a cabo esta investigación, se han utilizado tres fuentes de datos diferentes. En primer lugar, se ha utilizado la API de Google Analytics para obtener datos sobre la audiencia del site a lo largo de todo el año 2022. Datos climatológicos de nuestra base de datos histórica. Se ha generado un dataframe con la audiencia media diaria y mensualizada del site, con el objetivo de analizar si se producen picos de audiencia cuando llueve. Y datos de nuestra plataforma de compra Progrmática (Es un sistema automático que gestiona los anuncios en internet, y funciona con un sistema de puja sin intermediarios, es como la bolsa de valores pero de espacios publiciatios y en tiempo real). Se han cruzado y analizado datos de las precipitaciones en la península, la audiencia en el site, y los clientes que más han invertido, analizando los formatos que mejor funcionan en sus campañas, entre otros parámetros. Y a través de un modelo de Machine Learning y con todas éstas variables, se ha generado un modelo que tiene la capacidad de estimar el Revenue que podría generar un cliente bajo unas condiciones específicas')
 
 col1, col2= st.columns([8,2])
 with col1:

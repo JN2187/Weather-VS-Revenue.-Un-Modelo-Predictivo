@@ -1,5 +1,4 @@
 import pandas as pd
-import h2o
 import plotly.express as px
 
 def plot_plotly():
